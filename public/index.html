@@ -1,19 +1,185 @@
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <a href="index.html">
-            <img src="assets/image/logo.png" class="logo" alt="Le petit plat Home page"/>
+        <a href="index.html" class="header-logo">
+            <img src="assets/image/logo.png" class="logo" alt="Le petit plat Home page" />
         </a>
     </header>
     <main>
-        
+        <section class="search">
+            <div class="search-group">
+                <input type="text" class="search-control" id="search-input" placeholder="Rechercher une recette"
+                    data-search>
+                <label class="search-label" for="search-input">
+                    <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M23.4167 20.6667H21.9683L21.455 20.1717C23.2517 18.0817 24.3333 15.3683 24.3333 12.4167C24.3333 5.835 18.9983 0.5 12.4167 0.5C5.835 0.5 0.5 5.835 0.5 12.4167C0.5 18.9983 5.835 24.3333 12.4167 24.3333C15.3683 24.3333 18.0817 23.2517 20.1717 21.455L20.6667 21.9683V23.4167L29.8333 32.565L32.565 29.8333L23.4167 20.6667ZM12.4167 20.6667C7.85167 20.6667 4.16667 16.9817 4.16667 12.4167C4.16667 7.85167 7.85167 4.16667 12.4167 4.16667C16.9817 4.16667 20.6667 7.85167 20.6667 12.4167C20.6667 16.9817 16.9817 20.6667 12.4167 20.6667Z"
+                            fill="black" /></svg>
+                </label>
+            </div>
+        </section>
+        <section class="tags">
+            <span class="tags-name blue">
+                Cocombre
+                <button class="tags-button">
+                    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.59 6L10 8.59L7.41 6L6 7.41L8.59 10L6 12.59L7.41 14L10 11.41L12.59 14L14 12.59L11.41 10L14 7.41L12.59 6ZM10 0C4.47 0 0 4.47 0 10C0 15.53 4.47 20 10 20C15.53 20 20 15.53 20 10C20 4.47 15.53 0 10 0ZM10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18Z"
+                            fill="white"></path>
+                    </svg>
+                </button>
+            </span>
+            <span class="tags-name green">
+                Saladier
+                <button class="tags-button">
+                    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.59 6L10 8.59L7.41 6L6 7.41L8.59 10L6 12.59L7.41 14L10 11.41L12.59 14L14 12.59L11.41 10L14 7.41L12.59 6ZM10 0C4.47 0 0 4.47 0 10C0 15.53 4.47 20 10 20C15.53 20 20 15.53 20 10C20 4.47 15.53 0 10 0ZM10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18Z"
+                            fill="white"></path>
+                    </svg>
+                </button>
+            </span>
+            <span class="tags-name orange">
+                Presse citron
+                <button class="tags-button">
+                    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.59 6L10 8.59L7.41 6L6 7.41L8.59 10L6 12.59L7.41 14L10 11.41L12.59 14L14 12.59L11.41 10L14 7.41L12.59 6ZM10 0C4.47 0 0 4.47 0 10C0 15.53 4.47 20 10 20C15.53 20 20 15.53 20 10C20 4.47 15.53 0 10 0ZM10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18Z"
+                            fill="white"></path>
+                    </svg>
+                </button>
+            </span>
+        </section>
+        <section class="category">
+            <div class="dropdown blue">
+                <button class="btn-top">
+                    <span>Ingredients</span>
+                    <svg fill="#f1f1f1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 407.437 407.437"
+                        style="enable-background:new 0 0 407.437 407.437;" xml:space="preserve">
+                        <polygon
+                            points="386.258,91.567 203.718,273.512 21.179,91.567 0,112.815 203.718,315.87 407.437,112.815 " />
+                    </svg>
+                </button>
+                <div class="bloc-links">
+                    <ul>
+                        <li>
+                            <a>Lien 1</a>
+                        </li>
+                        <li>
+                            <a>Lien 2</a>
+                        </li>
+                        <li>
+                            <a>Lien 3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dropdown green">
+                <button class="btn-top">
+                    <span>Appareils</span>
+                    <svg fill="#f1f1f1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 407.437 407.437"
+                        style="enable-background:new 0 0 407.437 407.437;" xml:space="preserve">
+                        <polygon
+                            points="386.258,91.567 203.718,273.512 21.179,91.567 0,112.815 203.718,315.87 407.437,112.815 " />
+                    </svg>
+                </button>
+                <div class="bloc-links">
+                    <ul>
+                        <li>
+                            <a>Lien 1</a>
+                        </li>
+                        <li>
+                            <a>Lien 2</a>
+                        </li>
+                        <li>
+                            <a>Lien 3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dropdown orange">
+                <button class="btn-top">
+                    <span>Ustensiles</span>
+                    <svg fill="#f1f1f1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 407.437 407.437"
+                        style="enable-background:new 0 0 407.437 407.437;" xml:space="preserve">
+                        <polygon
+                            points="386.258,91.567 203.718,273.512 21.179,91.567 0,112.815 203.718,315.87 407.437,112.815 " />
+                    </svg>
+                </button>
+                <div class="bloc-links">
+                    <ul>
+                        <li>
+                            <a>Lien 1</a>
+                        </li>
+                        <li>
+                            <a>Lien 2</a>
+                        </li>
+                        <li>
+                            <a>Lien 3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="results">
+            <article class="result">
+                <div class="result-picture"></div>
+                <div class="result-top">
+                    <div class="result-top-title">Limonade de Coco</div>
+                    <div class="result-top-time">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 0C4.5 0 0 4.5 0 10C0 15.5 4.5 20 10 20C15.5 20 20 15.5 20 10C20 4.5 15.5 0 10 0ZM10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18ZM10.5 5H9V11L14.2 14.2L15 12.9L10.5 10.2V5Z" fill="black"></path></svg>
+                        10 min
+                    </div>
+                </div>
+                <div class="result-bottom">
+                    <div class="result-bottom-ingredients"><div class="ingredient"><b>Lait de coco:</b> 400 ml</div><div class="ingredient"><b>Jus de citron:</b> 2 </div><div class="ingredient"><b>Crème de coco:</b> 2 cuillères à soupe</div><div class="ingredient"><b>sucre</b></div><div class="ingredient"><b>glaçons</b></div></div>
+                    <div class="result-bottom-recipe">Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu'à avoir la consistence désirée</div>
+                </div>
+            </article>
+            <article class="result">
+                <div class="result-picture"></div>
+                <div class="result-top">
+                    <div class="result-top-title">Limonade de Coco</div>
+                    <div class="result-top-time">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 0C4.5 0 0 4.5 0 10C0 15.5 4.5 20 10 20C15.5 20 20 15.5 20 10C20 4.5 15.5 0 10 0ZM10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18ZM10.5 5H9V11L14.2 14.2L15 12.9L10.5 10.2V5Z" fill="black"></path></svg>
+                        10 min
+                    </div>
+                </div>
+                <div class="result-bottom">
+                    <div class="result-bottom-ingredients"><div class="ingredient"><b>Lait de coco:</b> 400 ml</div><div class="ingredient"><b>Jus de citron:</b> 2 </div><div class="ingredient"><b>Crème de coco:</b> 2 cuillères à soupe</div><div class="ingredient"><b>sucre</b></div><div class="ingredient"><b>glaçons</b></div></div>
+                    <div class="result-bottom-recipe">Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu'à avoir la consistence désirée</div>
+                </div>
+            </article>
+            <article class="result">
+                <div class="result-picture"></div>
+                <div class="result-top">
+                    <div class="result-top-title">Limonade de Coco</div>
+                    <div class="result-top-time">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 0C4.5 0 0 4.5 0 10C0 15.5 4.5 20 10 20C15.5 20 20 15.5 20 10C20 4.5 15.5 0 10 0ZM10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18ZM10.5 5H9V11L14.2 14.2L15 12.9L10.5 10.2V5Z" fill="black"></path></svg>
+                        10 min
+                    </div>
+                </div>
+                <div class="result-bottom">
+                    <div class="result-bottom-ingredients"><div class="ingredient"><b>Lait de coco:</b> 400 ml</div><div class="ingredient"><b>Jus de citron:</b> 2 </div><div class="ingredient"><b>Crème de coco:</b> 2 cuillères à soupe</div><div class="ingredient"><b>sucre</b></div><div class="ingredient"><b>glaçons</b></div></div>
+                    <div class="result-bottom-recipe">Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu'à avoir la consistence désirée</div>
+                </div>
+            </article>
+        </section>
     </main>
+    <script src="./js/utils/dropdown.js"></script>
 </body>
+
 </html>
