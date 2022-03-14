@@ -27,7 +27,9 @@ class Ingredient {
 
 const Algo1 = (recipes, input) => {
 	let TabRecipe = [];
-	recipes.forEach((recipe) => TabRecipe.push(new RecipeForBox(recipe)));
+	for (const recipe of recipes) {
+		TabRecipe.push(new RecipeForBox(recipe))
+	}
 	const results = TabRecipe.filter((recipe) => {
 		return (
 			recipe.name.includes(input) || 
